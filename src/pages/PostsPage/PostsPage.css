@@ -1,0 +1,58 @@
+li{
+    list-style-type: none;
+
+}
+
+.posts-list-item{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.01);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.116);
+    border-radius: 10px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.post-name{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: bold;
+}
+
+.post-name a{
+    text-decoration: none;
+}
+
+.post-title{
+    font-weight: bold;
+    padding: 20px;
+}
+.post-title a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.753);
+    font-weight: 600;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+.post-comments{
+    padding: 10px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.795);
+}
+
+.posts-page-text{
+    text-align: center;
+}
+
+.all-posts-text{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.01);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.116);
+}
+
