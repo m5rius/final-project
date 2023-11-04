@@ -1,25 +1,33 @@
 import React, { useEffect, useState } from 'react'
 import Container from '../../components/Container/Container'
-import axios from 'axios'
+import { API_URL } from '../../config'
+import CryptocurrenciesList from '../../components/CryptocurrenciesList/CryptocurrenciesList'
 
 const CryptocurrenciesPage = () => {
 
-    const [coins, setCoins] = useState(null)
-
-    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false&locale=en'
+    const [coins, setCoins] = useState('')
 
     useEffect(() => {
-        axios.get(url).then((response) => {
-            setCoins(response.data)
-        }).catch((error) => {
-            console.log(error)
-        })
-    }, [])
+      fetch(`${API_URL}/coins/`)
+      .then(res => res.json())
+      .then(data => 
+        setCoins(data))
+        
+      }, [])
+      
+      console.log(coins)
 
-    console.log(coins)
   return (
     <Container>
-
+      <h1>Top Cryptocurrencies</h1>
+      <div className='crypto-list-top'>
+        <div>#</div>
+        <div>Coin</div>
+        <div>Price</div>
+        <div>24 Change</div>
+        <div>Market Cap</div>
+      </div>
+      <CryptocurrenciesList coins={coins} />
     </Container>
   )
 }

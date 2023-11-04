@@ -18,6 +18,7 @@ import EditUserPage from './pages/EditUserPage/EditUserPage';
 import CreateAlbumPage from './pages/CreateAlbumPage/CreateAlbumPage';
 import EditAlbumPage from './pages/EditAlbumPage/EditAlbumPage';
 import CryptocurrenciesPage from './pages/CryptocurrenciesPage/CryptocurrenciesPage';
+import CryptocurrencyPage from './pages/CryptocurrencyPage/CryptocurrencyPage';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/posts' element ={<PostsPage/>}></Route>
         <Route path='/albums' element ={<AlbumsPage/>}></Route>
         <Route path='/cryptocurrencies' element ={<CryptocurrenciesPage/>}></Route>
+        <Route path='/coins/:id' element ={<CryptocurrencyPage/>}></Route>
         <Route path='/search-page' element ={<SearchPage/>}></Route>
         <Route path='/posts/:id' element ={<PostPage/>}></Route>
         <Route path='/create-post' element ={<CreatePostPage/>}></Route>
