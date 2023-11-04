@@ -1,0 +1,68 @@
+.red {
+    color: red;
+    display: flex;
+    align-items: center;
+}
+.green {
+    color: green;
+    display: flex;
+    align-items: center;
+}
+.upperBlock1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.priceAndChange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nameAndSymbol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.coinSymbol{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: rgb(34, 34, 34);
+}
+.coinName{
+    font-size: 1.5em;
+}
+
+.coinImage{
+    width: 200px;
+}
+
+.coinMiddleBlock{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.middleBlock1, .middleBlock2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.coinInfoWrapper {
+    display: flex;
+    border-bottom: solid 1px rgb(34, 34, 34);
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 13px;
+}

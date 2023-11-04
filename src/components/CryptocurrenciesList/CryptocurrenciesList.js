@@ -1,8 +1,8 @@
 import React from 'react'
-import CryptocurrencyItem from './CryptocurrencyItem'
+import CryptocurrencyItem from '../CryptocurrencyItem/CryptocurrencyItem'
 
 const CryptocurrenciesList = ({ coins }) => {
-    let cryptocurrenciesElement = <p>No posts...</p>
+    let cryptocurrenciesElement = <p>Loading...</p>
     
     if (coins.length > 0) {
         cryptocurrenciesElement = (

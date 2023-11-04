@@ -1,5 +1,5 @@
 
-ul{
+ul, h2, h1, h3, h4{
     margin: 0;
     padding: 0;
 }
@@ -190,8 +190,8 @@ text-align: center;
 }
 
 .crypto-list-top{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr;
 }
 
 .coin-name-image-wrapper{
@@ -201,11 +201,8 @@ text-align: center;
 }
 
 .coin-name-image-wrapper img{
-    width: 70px;
+    width: 60px;
 }
 
-.coin-price, .market-cap, .price-change{
-    display: flex;
-    justify-content: center;
-}
+
 

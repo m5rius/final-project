@@ -21,11 +21,11 @@ const CryptocurrenciesPage = () => {
     <Container>
       <h1>Top Cryptocurrencies</h1>
       <div className='crypto-list-top'>
-        <div>#</div>
-        <div>Coin</div>
-        <div>Price</div>
-        <div>24 Change</div>
-        <div>Market Cap</div>
+        <div className='coin-nr'>#</div>
+        <div className='coin-name'>Coin</div>
+        <div className='coin-price'>Price</div>
+        <div className='price-change'>24 Change</div>
+        <div className='market-cap'>Market Cap</div>
       </div>
       <CryptocurrenciesList coins={coins} />
     </Container>
