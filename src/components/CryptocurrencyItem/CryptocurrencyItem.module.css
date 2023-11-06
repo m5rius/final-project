@@ -1,0 +1,30 @@
+.coinsListItem{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr;
+    align-items: center;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.288);
+}
+
+.coinImageAndNameWrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.coinImageAndNameWrapper img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.coinPrice, .coinPriceChange, .coinMarketCap {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}

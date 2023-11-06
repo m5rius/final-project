@@ -1,0 +1,22 @@
+.topCryptosText {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cryptosListTopWrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.coinName, .coinPrice, .coinPriceChange, .coinMarketCap {
+    display: flex;
+    justify-content: center;
+}

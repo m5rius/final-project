@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  text-decoration: none;
+}
+
+
+
+.edit-btn-wrapper, .remove-btn-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.edit-btn-wrapper{
+  background-color: rgb(99, 99, 241);
+  color: white;
+}
+
+.remove-btn-wrapper{
+  background-color: rgb(240, 74, 74);
+  color: white;
+}
+
+
+.edit-btn {
+  font-size: 18px;
+  color: white;
+
+}
+
+.remove-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+
+}

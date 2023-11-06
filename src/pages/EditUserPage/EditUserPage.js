@@ -14,6 +14,7 @@ const EditUserPage = () => {
     const[email,setEmail] = useState('')
     const[phone,setPhone] = useState('')
     const[website,setWebsite] = useState('')
+    const[image,setImage] = useState('')
     const[companyName, setCompanyName] = useState('')
     const[catchPhrase, setCatchPhrase] = useState('')
     const[bs, setBs] = useState('')
@@ -34,6 +35,7 @@ const EditUserPage = () => {
         setUsername(data.username)
         setEmail(data.email)
         setPhone(data.phone)
+        setImage(data.picture)
         setWebsite(data.website)
         setCompanyName(data.company.name)
         setCatchPhrase(data.company.catchPhrase)
@@ -55,6 +57,7 @@ const EditUserPage = () => {
     const emailHandler = event => setEmail(event.target.value)
     const phoneHandler = event => setPhone(event.target.value)
     const websiteHandler = event => setWebsite(event.target.value)
+    const imageHandler = event => setImage(event.target.value)
     const companyNameHandler = event => setCompanyName(event.target.value)
     const catchPhraseHandler = event => setCatchPhrase(event.target.value)
     const bsHandler = event => setBs(event.target.value)
@@ -84,6 +87,7 @@ const EditUserPage = () => {
           }
         },
         phone: phone,
+        picture: image,
         website: website,
         company: {
             companyName: companyName,
@@ -156,6 +160,17 @@ const EditUserPage = () => {
             id='phone'
             value={phone}
             onChange={phoneHandler}
+            />
+          </div>
+
+          <div className='form-control'>
+            <label htmlFor='image'>Photo: </label>
+            <input
+            type='url'
+            name='image'
+            id='image'
+            value={image}
+            onChange={imageHandler}
             />
           </div>
 

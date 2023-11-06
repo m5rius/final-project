@@ -3,6 +3,7 @@ import Container from "../../components/Container/Container"
 import { Link, useParams } from "react-router-dom"
 import { API_URL } from "../../config"
 import { Oval } from "react-loader-spinner"
+import styles from './PostPage.module.css'
 
 const PostPage = () => {
 

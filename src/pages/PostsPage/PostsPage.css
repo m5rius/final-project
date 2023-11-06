@@ -48,11 +48,3 @@ li{
     text-align: center;
 }
 
-.all-posts-text{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.01);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.116);
-}
-

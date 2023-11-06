@@ -4,6 +4,7 @@ import PostsList from '../../components/PostsList/PostsList'
 import './PostsPage.css'
 import { Link } from 'react-router-dom'
 import { API_URL } from '../../config'
+import styles from './PostsPage.module.css'
 
 
 const PostsPage = () => {
@@ -22,7 +23,7 @@ const PostsPage = () => {
     <Container>
 
       <Link className='create-new-post-link' to='/create-post'> Create new Post </Link>
-      <h2 className='all-posts-text'>All Posts</h2>
+      <h2 className={styles.allPoststext}>All Posts</h2>
       <PostsList posts={posts} />
     </Container>
   )

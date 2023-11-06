@@ -1,12 +1,13 @@
 import React from 'react'
 import PostItem from '../PostItem/PostItem'
+import styles from './PostsList.module.css'
 
 const PostsList = ({ posts }) => {
-    let postsElement = <p>No posts...</p>
+    let postsElement = <p>Loading posts...</p>
     
     if (posts.length > 0) {
       postsElement = (
-        <ul className='posts-list'>
+        <ul className={styles.postsList}>
             {posts.map((post) => <PostItem key={post.id} data={post}/>)}
         </ul>
       )

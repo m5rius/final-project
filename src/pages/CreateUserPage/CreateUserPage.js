@@ -10,11 +10,10 @@ const CreateUserPage = () => {
     const[email,setEmail] = useState('')
     const[phone,setPhone] = useState('')
     const[website,setWebsite] = useState('')
-    // const[company,setCompany] = useState({})
+    const[image,setImage] = useState('')
     const[companyName, setCompanyName] = useState('')
     const[catchPhrase, setCatchPhrase] = useState('')
     const[bs, setBs] = useState('')
-    // const[address,setAddress] = useState({})
     const[street, setStreet] = useState('')
     const[suite, setSuite] = useState('')
     const[city, setCity] = useState('')
@@ -37,12 +36,11 @@ const CreateUserPage = () => {
     const usernameHandler = event => setUsername(event.target.value)
     const emailHandler = event => setEmail(event.target.value)
     const phoneHandler = event => setPhone(event.target.value)
+    const imageHandler = event => setImage(event.target.value)
     const websiteHandler = event => setWebsite(event.target.value)
-    // const companyHandler = event => setCompany(event.target.value)
     const companyNameHandler = event => setCompanyName(event.target.value)
     const catchPhraseHandler = event => setCatchPhrase(event.target.value)
     const bsHandler = event => setBs(event.target.value)
-    // const addressHandler = event => setAddress(event.target.value)
     const streetHandler = event => setStreet(event.target.value)
     const suiteHandler = event => setSuite(event.target.value)
     const cityHandler = event => setCity(event.target.value)
@@ -55,9 +53,9 @@ const CreateUserPage = () => {
   
       const newUser = {
         name: name,
-        // userId: id,
         username: username,
         email: email,
+        picture: image,
         address: {
           street: street,
           suite: suite,
@@ -129,6 +127,17 @@ const CreateUserPage = () => {
             id='email'
             value={email}
             onChange={emailHandler}
+            />
+          </div>
+
+          <div className='form-control'>
+            <label htmlFor='image'>Photo: </label>
+            <input
+            type='url'
+            name='image'
+            id='email'
+            value={image}
+            onChange={imageHandler}
             />
           </div>
 

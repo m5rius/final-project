@@ -1,0 +1,8 @@
+.coinsList{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    gap: 10px;
+}

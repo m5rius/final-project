@@ -8,11 +8,12 @@ const EditPostPage = () => {
     const { id } = useParams()
     const navigate = useNavigate()
 
-    const[isLoading, setIsLoading] = useState(true)
-    const[title,setTitle] = useState('')
-    const[body,setBody] = useState('')
-    const[selectedUser, setSelectedUser] = useState('')
-    const[users,setUsers] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
+    const [title, setTitle] = useState('')
+    const [body, setBody] = useState('')
+    const [image, setImage] = useState('')
+    const [selectedUser, setSelectedUser] = useState('')
+    const [users, setUsers] = useState([])
 
 
     useEffect(() => {
@@ -20,12 +21,14 @@ const EditPostPage = () => {
         .then(res => res.json())
         .then(postData => {
 
-            const { title, body, userId } = postData
+            const { title, body, userId, imageUrl } = postData
             setTitle(title)
             setBody(body)
+            setImage(imageUrl)
             setSelectedUser(userId)
         })
     }, [id])
+    
   
     useEffect(() => {
       fetch(`${API_URL}/users`)
@@ -39,6 +42,7 @@ const EditPostPage = () => {
   
     const titleHandler = event => setTitle(event.target.value)
     const bodyHandler = event => setBody(event.target.value)
+    const imageHandler = event => setImage(event.target.value)
     const userHandler = event => setSelectedUser(event.target.value)
   
     const editPostHandler = event => {
@@ -49,6 +53,7 @@ const EditPostPage = () => {
         id: Number(id),
         title: title,
         body: body,
+        imageUrl: image,
         userId: Number(selectedUser),
       }
   
@@ -94,6 +99,17 @@ const EditPostPage = () => {
             id='body'
             value={body}
             onChange={bodyHandler}
+        />
+        </div>
+
+        <div className='form-control'>
+            <label htmlFor='image'>Image: </label>
+        <input
+            type='url'
+            name='image'
+            id='image'
+            value={image}
+            onChange={imageHandler}
         />
         </div>
 

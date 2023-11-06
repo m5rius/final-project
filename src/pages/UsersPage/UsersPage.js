@@ -3,6 +3,7 @@ import Container from '../../components/Container/Container'
 import UsersList from '../../components/UsersList/UsersList'
 import { API_URL } from '../../config'
 import { Link } from 'react-router-dom'
+import styles from './UsersPage.module.css'
 
 const UsersPage = () => {
 
@@ -18,10 +19,8 @@ const UsersPage = () => {
   
   return (
     <Container>
-      <h1 className='users-page-text'>Users page</h1>
+      <h2 className={styles.allUsersText}>All users</h2>
       <Link className='create-new-user-link' to='/create-user'> Create New User </Link>
-      <h2 className='users-text'>All users</h2>
-
       <UsersList users={users}/>
     </Container>
   )

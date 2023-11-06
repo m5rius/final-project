@@ -1,0 +1,35 @@
+.userName{
+
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: bold;
+}
+
+.userNickname, .city, .postsCount{
+    display: flex;
+    justify-content: center;
+}
+
+.userName a{
+    text-decoration: none;
+}
+
+
+.profileAndNameWrapper img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profileAndNameWrapper{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.usersListItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}

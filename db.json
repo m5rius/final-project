@@ -2,189 +2,213 @@
   "posts": [
     {
       "id": 1,
-      "title": "Edited post",
+      "title": "sasdsa moasdatias gi quia",
       "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
-      "userId": 1,
-      "imageUrl": "https://tradebrains.in/features/wp-content/uploads/2023/04/Cryptocurrency-chart.png"
+      "imageUrl": "data:image/png;base64,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",
+      "userId": 1
     },
     {
       "id": 2,
-      "title": "Edited post title!!!",
+      "title": "molestiae occaecati quia mollitia voluptas nihil non",
       "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
-      "userId": 1,
-      "imageUrl": "https://tradebrains.in/features/wp-content/uploads/2023/04/Cryptocurrency-chart.png"
+      "imageUrl": "https://www.coindesk.com/resizer/uhYwCH3Ld5b5S3F6Mn2hVCm7an4=/567x349/filters:quality(80):format(jpg)/cloudfront-us-east-1.images.arcpublishing.com/coindesk/2VWCURJXTVAAFDRYIY4QYIBSII.png",
+      "userId": 1
     },
     {
       "userId": 1,
       "id": 3,
       "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
       "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
-      "imageUrl": "https://tradebrains.in/features/wp-content/uploads/2023/04/Cryptocurrency-chart.png"
+      "imageUrl": "https://www.antiersolutions.com/wp-content/uploads/2020/04/9.jpg"
     },
     {
       "userId": 2,
       "id": 11,
       "title": "et ea vero quia laudantium autem",
       "body": "delectus reiciendis molestiae occaecati non minima eveniet qui voluptatibus\naccusamus in eum beatae sit\nvel qui neque voluptates ut commodi qui incidunt\nut animi commodi",
-      "imageUrl": "https://tradebrains.in/features/wp-content/uploads/2023/04/Cryptocurrency-chart.png"
+      "imageUrl": "https://m.foolcdn.com/media/dubs/images/financial-planing-infographic.width-880.png"
     },
     {
       "userId": 2,
       "id": 12,
       "title": "in quibusdam tempore odit est dolorem",
       "body": "itaque id aut magnam\npraesentium quia et ea odit et ea voluptas et\nsapiente quia nihil amet occaecati quia id voluptatem\nincidunt ea est distinctio odio",
-      "imageUrl": "https://tradebrains.in/features/wp-content/uploads/2023/04/Cryptocurrency-chart.png"
+      "imageUrl": "https://www.incharge.org/wp-content/uploads/2015/06/Financial-Budget-Goals.gif"
     },
     {
       "userId": 2,
       "id": 13,
       "title": "dolorum ut in voluptas mollitia et saepe quo animi",
       "body": "aut dicta possimus sint mollitia voluptas commodi quo doloremque\niste corrupti reiciendis voluptatem eius rerum\nsit cumque quod eligendi laborum minima\nperferendis recusandae assumenda consectetur porro architecto ipsum ipsam",
-      "imageUrl": "https://tradebrains.in/features/wp-content/uploads/2023/04/Cryptocurrency-chart.png"
+      "imageUrl": "https://img.freepik.com/free-photo/stacks-coins-arranged-bar-graph_35913-2518.jpg"
     },
     {
       "userId": 3,
       "id": 21,
       "title": "asperiores ea ipsam voluptatibus modi minima quia sint",
-      "body": "repellat aliquid praesentium dolorem quo\nsed totam minus non itaque\nnihil labore molestiae sunt dolor eveniet hic recusandae veniam\ntempora et tenetur expedita sunt"
+      "body": "repellat aliquid praesentium dolorem quo\nsed totam minus non itaque\nnihil labore molestiae sunt dolor eveniet hic recusandae veniam\ntempora et tenetur expedita sunt",
+      "imageUrl": "https://qph.cf2.quoracdn.net/main-qimg-daf2c9dc05033d8ca9bef0bc129818c6-pjlq"
     },
     {
       "userId": 3,
       "id": 22,
       "title": "dolor sint quo a velit explicabo quia nam",
-      "body": "eos qui et ipsum ipsam suscipit aut\nsed omnis non odio\nexpedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse"
+      "body": "eos qui et ipsum ipsam suscipit aut\nsed omnis non odio\nexpedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse",
+      "imageUrl": "https://i.insider.com/6113ebd909c63400193334c3?width=700"
     },
     {
       "userId": 3,
       "id": 23,
       "title": "maxime id vitae nihil numquam",
-      "body": "veritatis unde neque eligendi\nquae quod architecto quo neque vitae\nest illo sit tempora doloremque fugit quod\net et vel beatae sequi ullam sed tenetur perspiciatis"
+      "body": "veritatis unde neque eligendi\nquae quod architecto quo neque vitae\nest illo sit tempora doloremque fugit quod\net et vel beatae sequi ullam sed tenetur perspiciatis",
+      "imageUrl": "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/03/stock_chart.jpeg"
     },
     {
       "userId": 4,
       "id": 31,
       "title": "ullam ut quidem id aut vel consequuntur",
-      "body": "debitis eius sed quibusdam non quis consectetur vitae\nimpedit ut qui consequatur sed aut in\nquidem sit nostrum et maiores adipisci atque\nquaerat voluptatem adipisci repudiandae"
+      "body": "debitis eius sed quibusdam non quis consectetur vitae\nimpedit ut qui consequatur sed aut in\nquidem sit nostrum et maiores adipisci atque\nquaerat voluptatem adipisci repudiandae",
+      "imageUrl": "https://img.freepik.com/free-vector/popular-cryptocurrency-logos-set_69286-369.jpg"
     },
     {
       "userId": 4,
       "id": 32,
       "title": "doloremque illum aliquid sunt",
-      "body": "deserunt eos nobis asperiores et hic\nest debitis repellat molestiae optio\nnihil ratione ut eos beatae quibusdam distinctio maiores\nearum voluptates et aut adipisci ea maiores voluptas maxime"
+      "body": "deserunt eos nobis asperiores et hic\nest debitis repellat molestiae optio\nnihil ratione ut eos beatae quibusdam distinctio maiores\nearum voluptates et aut adipisci ea maiores voluptas maxime",
+      "imageUrl": "https://www.totaltek.com/wp-content/uploads/2022/01/Computer-Programming-Languages.jpg"
     },
     {
       "userId": 4,
       "id": 33,
       "title": "qui explicabo molestiae dolorem",
-      "body": "rerum ut et numquam laborum odit est sit\nid qui sint in\nquasi tenetur tempore aperiam et quaerat qui in\nrerum officiis sequi cumque quod"
+      "body": "rerum ut et numquam laborum odit est sit\nid qui sint in\nquasi tenetur tempore aperiam et quaerat qui in\nrerum officiis sequi cumque quod",
+      "imageUrl": "https://www.freecodecamp.org/news/content/images/2022/12/main-image.png"
     },
     {
       "userId": 5,
       "id": 41,
       "title": "non est facere",
-      "body": "molestias id nostrum\nexcepturi molestiae dolore omnis repellendus quaerat saepe\nconsectetur iste quaerat tenetur asperiores accusamus ex ut\nnam quidem est ducimus sunt debitis saepe"
+      "body": "molestias id nostrum\nexcepturi molestiae dolore omnis repellendus quaerat saepe\nconsectetur iste quaerat tenetur asperiores accusamus ex ut\nnam quidem est ducimus sunt debitis saepe",
+      "imageUrl": "https://img.freepik.com/free-photo/ai-technology-brain-background-digital-transformation-concept_53876-124672.jpg"
     },
     {
       "userId": 5,
       "id": 42,
       "title": "commodi ullam sint et excepturi error explicabo praesentium voluptas",
-      "body": "odio fugit voluptatum ducimus earum autem est incidunt voluptatem\nodit reiciendis aliquam sunt sequi nulla dolorem\nnon facere repellendus voluptates quia\nratione harum vitae ut"
+      "body": "odio fugit voluptatum ducimus earum autem est incidunt voluptatem\nodit reiciendis aliquam sunt sequi nulla dolorem\nnon facere repellendus voluptates quia\nratione harum vitae ut",
+      "imageUrl": "https://img.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg"
     },
     {
       "userId": 5,
       "id": 43,
       "title": "eligendi iste nostrum consequuntur adipisci praesentium sit beatae perferendis",
-      "body": "similique fugit est\nillum et dolorum harum et voluptate eaque quidem\nexercitationem quos nam commodi possimus cum odio nihil nulla\ndolorum exercitationem magnam ex et a et distinctio debitis"
+      "body": "similique fugit est\nillum et dolorum harum et voluptate eaque quidem\nexercitationem quos nam commodi possimus cum odio nihil nulla\ndolorum exercitationem magnam ex et a et distinctio debitis",
+      "imageUrl": "https://www.codecademy.com/resources/blog/wp-content/uploads/2022/12/programming-languages.png"
     },
     {
       "userId": 6,
       "id": 51,
       "title": "soluta aliquam aperiam consequatur illo quis voluptas",
-      "body": "sunt dolores aut doloribus\ndolore doloribus voluptates tempora et\ndoloremque et quo\ncum asperiores sit consectetur dolorem"
+      "body": "sunt dolores aut doloribus\ndolore doloribus voluptates tempora et\ndoloremque et quo\ncum asperiores sit consectetur dolorem",
+      "imageUrl": "https://fxmedia.s3.amazonaws.com/articles/best_trading_strategies-1.png"
     },
     {
       "userId": 6,
       "id": 52,
       "title": "qui enim et consequuntur quia animi quis voluptate quibusdam",
-      "body": "iusto est quibusdam fuga quas quaerat molestias\na enim ut sit accusamus enim\ntemporibus iusto accusantium provident architecto\nsoluta esse reprehenderit qui laborum"
+      "body": "iusto est quibusdam fuga quas quaerat molestias\na enim ut sit accusamus enim\ntemporibus iusto accusantium provident architecto\nsoluta esse reprehenderit qui laborum",
+      "imageUrl": "https://www.wallstreetzen.com/blog/wp-content/uploads/2022/10/tradingview_volume_indicators.png"
     },
     {
       "userId": 6,
       "id": 53,
       "title": "ut quo aut ducimus alias",
-      "body": "minima harum praesentium eum rerum illo dolore\nquasi exercitationem rerum nam\nporro quis neque quo\nconsequatur minus dolor quidem veritatis sunt non explicabo similique"
+      "body": "minima harum praesentium eum rerum illo dolore\nquasi exercitationem rerum nam\nporro quis neque quo\nconsequatur minus dolor quidem veritatis sunt non explicabo similique",
+      "imageUrl": "https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699142400&semt=ais"
     },
     {
       "userId": 7,
       "id": 61,
       "title": "voluptatem doloribus consectetur est ut ducimus",
-      "body": "ab nemo optio odio\ndelectus tenetur corporis similique nobis repellendus rerum omnis facilis\nvero blanditiis debitis in nesciunt doloribus dicta dolores\nmagnam minus velit"
+      "body": "ab nemo optio odio\ndelectus tenetur corporis similique nobis repellendus rerum omnis facilis\nvero blanditiis debitis in nesciunt doloribus dicta dolores\nmagnam minus velit",
+      "imageUrl": "https://www.techrepublic.com/wp-content/uploads/2022/08/learn-coding-automation-just-770x513.jpeg"
     },
     {
       "userId": 7,
       "id": 62,
       "title": "beatae enim quia vel",
-      "body": "enim aspernatur illo distinctio quae praesentium\nbeatae alias amet delectus qui voluptate distinctio\nodit sint accusantium autem omnis\nquo molestiae omnis ea eveniet optio"
+      "body": "enim aspernatur illo distinctio quae praesentium\nbeatae alias amet delectus qui voluptate distinctio\nodit sint accusantium autem omnis\nquo molestiae omnis ea eveniet optio",
+      "imageUrl": "https://images.ctfassets.net/mrop88jh71hl/60N2q8kDv42gi9xNIaSYJU/dacbb854f1f5e124643041f99e5f5c00/best-coding-languages-for-kids.jpeg?w=1024&h=684&fl=progressive&q=100&fm=jpg"
     },
     {
       "userId": 7,
       "id": 63,
       "title": "voluptas blanditiis repellendus animi ducimus error sapiente et suscipit",
-      "body": "enim adipisci aspernatur nemo\nnumquam omnis facere dolorem dolor ex quis temporibus incidunt\nab delectus culpa quo reprehenderit blanditiis asperiores\naccusantium ut quam in voluptatibus voluptas ipsam dicta"
+      "body": "enim adipisci aspernatur nemo\nnumquam omnis facere dolorem dolor ex quis temporibus incidunt\nab delectus culpa quo reprehenderit blanditiis asperiores\naccusantium ut quam in voluptatibus voluptas ipsam dicta",
+      "imageUrl": "https://blog.hubspot.com/hs-fs/hubfs/how-to-start-coding-1.jpg?width=595&height=400&name=how-to-start-coding-1.jpg"
     },
     {
       "userId": 8,
       "id": 72,
       "title": "sint hic doloribus consequatur eos non id",
-      "body": "quam occaecati qui deleniti consectetur\nconsequatur aut facere quas exercitationem aliquam hic voluptas\nneque id sunt ut aut accusamus\nsunt consectetur expedita inventore velit"
+      "body": "quam occaecati qui deleniti consectetur\nconsequatur aut facere quas exercitationem aliquam hic voluptas\nneque id sunt ut aut accusamus\nsunt consectetur expedita inventore velit",
+      "imageUrl": "https://cdn2.forexbrokers.com/uploads/f8u9e6r/Saxo-Bank-SaxoTraderPRO-desktop-trading-platform.jpg"
     },
     {
       "userId": 8,
       "id": 73,
       "title": "consequuntur deleniti eos quia temporibus ab aliquid at",
-      "body": "voluptatem cumque tenetur consequatur expedita ipsum nemo quia explicabo\naut eum minima consequatur\ntempore cumque quae est et\net in consequuntur voluptatem voluptates aut"
+      "body": "voluptatem cumque tenetur consequatur expedita ipsum nemo quia explicabo\naut eum minima consequatur\ntempore cumque quae est et\net in consequuntur voluptatem voluptates aut",
+      "imageUrl": "https://businessday.ng/wp-content/uploads/2022/04/forex-trading.png"
     },
     {
       "userId": 8,
       "id": 74,
       "title": "enim unde ratione doloribus quas enim ut sit sapiente",
-      "body": "odit qui et et necessitatibus sint veniam\nmollitia amet doloremque molestiae commodi similique magnam et quam\nblanditiis est itaque\nquo et tenetur ratione occaecati molestiae tempora"
+      "body": "odit qui et et necessitatibus sint veniam\nmollitia amet doloremque molestiae commodi similique magnam et quam\nblanditiis est itaque\nquo et tenetur ratione occaecati molestiae tempora",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/7c6d07591e72c3ca757d6efa547bac21?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=260&width=862&height=485"
     },
     {
       "userId": 9,
       "id": 81,
       "title": "tempora rem veritatis voluptas quo dolores vero",
-      "body": "facere qui nesciunt est voluptatum voluptatem nisi\nsequi eligendi necessitatibus ea at rerum itaque\nharum non ratione velit laboriosam quis consequuntur\nex officiis minima doloremque voluptas ut aut"
+      "body": "facere qui nesciunt est voluptatum voluptatem nisi\nsequi eligendi necessitatibus ea at rerum itaque\nharum non ratione velit laboriosam quis consequuntur\nex officiis minima doloremque voluptas ut aut",
+      "imageUrl": "https://cryptoslate.com/wp-content/themes/cryptoslate-2020/imgresize/timthumb.php?src=https://cryptoslate.com/wp-content/uploads/2023/10/sbf-sam-bankman-fried-4.jpg&w=600&h=315&q=75"
     },
     {
       "userId": 9,
       "id": 82,
       "title": "laudantium voluptate suscipit sunt enim enim",
-      "body": "ut libero sit aut totam inventore sunt\nporro sint qui sunt molestiae\nconsequatur cupiditate qui iste ducimus adipisci\ndolor enim assumenda soluta laboriosam amet iste delectus hic"
+      "body": "ut libero sit aut totam inventore sunt\nporro sint qui sunt molestiae\nconsequatur cupiditate qui iste ducimus adipisci\ndolor enim assumenda soluta laboriosam amet iste delectus hic",
+      "imageUrl": "https://businessday.ng/wp-content/uploads/2022/04/forex-trading.png"
     },
     {
       "userId": 9,
       "id": 83,
       "title": "odit et voluptates doloribus alias odio et",
-      "body": "est molestiae facilis quis tempora numquam nihil qui\nvoluptate sapiente consequatur est qui\nnecessitatibus autem aut ipsa aperiam modi dolore numquam\nreprehenderit eius rem quibusdam"
+      "body": "est molestiae facilis quis tempora numquam nihil qui\nvoluptate sapiente consequatur est qui\nnecessitatibus autem aut ipsa aperiam modi dolore numquam\nreprehenderit eius rem quibusdam",
+      "imageUrl": "https://image.cnbcfm.com/api/v1/image/107328277-16989727641698972761-31859600576-1080pnbcnews.jpg?v=1698972763&w=750&h=422&vtcrop=y"
     },
     {
       "userId": 10,
       "id": 91,
       "title": "aut amet sed",
-      "body": "libero voluptate eveniet aperiam sed\nsunt placeat suscipit molestias\nsimilique fugit nam natus\nexpedita consequatur consequatur dolores quia eos et placeat"
+      "body": "libero voluptate eveniet aperiam sed\nsunt placeat suscipit molestias\nsimilique fugit nam natus\nexpedita consequatur consequatur dolores quia eos et placeat",
+      "imageUrl": "https://blogs.worldbank.org/sites/default/files/styles/card/public/2023-10/svb_x_card.jpg.webp?itok=74sJmMmx"
     },
     {
       "userId": 10,
       "id": 92,
       "title": "ratione ex tenetur perferendis",
-      "body": "aut et excepturi dicta laudantium sint rerum nihil\nlaudantium et at\na neque minima officia et similique libero et\ncommodi voluptate qui"
+      "body": "aut et excepturi dicta laudantium sint rerum nihil\nlaudantium et at\na neque minima officia et similique libero et\ncommodi voluptate qui",
+      "imageUrl": "https://img.freepik.com/free-vector/hand-drawn-stock-market-concept-with-screen_23-2149164584.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699056000&semt=ais"
     },
     {
       "userId": 10,
       "id": 93,
       "title": "beatae soluta recusandae",
-      "body": "dolorem quibusdam ducimus consequuntur dicta aut quo laboriosam\nvoluptatem quis enim recusandae ut sed sunt\nnostrum est odit totam\nsit error sed sunt eveniet provident qui nulla"
+      "body": "dolorem quibusdam ducimus consequuntur dicta aut quo laboriosam\nvoluptatem quis enim recusandae ut sed sunt\nnostrum est odit totam\nsit error sed sunt eveniet provident qui nulla",
+      "imageUrl": "https://blogassets.leverageedu.com/blog/wp-content/uploads/2019/08/23163645/Short-Term-Courses-in-Finance.jpg"
     }
   ],
   "users": [
@@ -193,7 +217,7 @@
       "id": 1,
       "username": "Bret",
       "email": "Sincere@april.biz",
-      "picture": "https://media.istockphoto.com/id/1386479313/photo/happy-millennial-afro-american-business-woman-posing-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=ahypUC_KTc95VOsBkzLFZiCQ0VJwewfrSV43BOrLETM=",
+      "picture": "https://play-lh.googleusercontent.com/0SAFn-mRhhDjQNYU46ZwA7tz0xmRiQG4ZuZmuwU8lYmqj6zEpnqsee_6QDuhQ4ZofwXj=w240-h480-rw",
       "address": {
         "street": "Kulas Light",
         "suite": "Apt. 556",
@@ -240,7 +264,7 @@
       "name": "Clementine Bauch",
       "username": "Samantha",
       "email": "Nathan@yesenia.net",
-      "picture": "https://w0.peakpx.com/wallpaper/979/89/HD-wallpaper-purple-smile-design-eye-smily-profile-pic-face-thumbnail.jpg",
+      "picture": "https://wallpapers-clan.com/wp-content/uploads/2022/05/meme-pfp-42.jpg",
       "address": {
         "street": "Douglas Extension",
         "suite": "Suite 847",
@@ -1514,6 +1538,146 @@
       "title": "RENGA #5701",
       "url": "https://via.placeholder.com/600/92c952",
       "thumbnailUrl": "https://i.seadn.io/gcs/files/ec4915b1c16ea9511fc3d0e091ffaa54.jpg?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 3,
+      "id": 11,
+      "title": "APE #4249",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/gae/gbZV-IqIVsKP2G0HiIgLrV5F-fqZIvqD6WNsMovksfI0uPTxubwjEcHzgfPSeG_aDaHXqG_pKEB4AKilKZFZ8fiD0l5J4XanzUZ9HA?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 3,
+      "id": 12,
+      "title": "APE #3749",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/gae/grHHS7VLjgmEDagQ7nBar0sFHb0c-BP7v_w_R8aJVpaMrCzk-Yd_CCp3cO9PFlzuDBc_NPLyaZwJpS_Fvz-mHPdl2hs4ukP0e334vw?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 3,
+      "id": 13,
+      "title": "APE #8353",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/gae/hdZnxIMO52VRmsB9L0OG-nLKoDFFJMuZ8Y3-zo2n7whSy-vWcxBDQkEyUbZKak8AELzSlYMFqTQSwCXwul3ARZLxTAaDp6uCQzw8?auto=format&dpr=1&w=1920"
+    },
+    {
+      "albumId": 3,
+      "id": 14,
+      "title": "APE #4740",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/gae/uv4xa34gwGyq5AXQEjsnaWQZiLQZFr82ZOm6s4Ff-0exFB_kDK-xzosiW70y4G8PSKCUG-E8knsrZUu824x1woBdtbAxLeXnFv_wXw?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 3,
+      "id": 15,
+      "title": "APE #8351",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/gae/zW7Nvp_bDe5igIrfFcmaHefkgU-buWNcP6RhdM6vzlL-Smjq4TiC8UXM4HBSYmtooaTVcLs7zfXYA2tCeEJy8QuFB-dVrWgghHvWag?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 4,
+      "id": 16,
+      "title": "Penguin #6612",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/gcs/files/0271b96ec6f09f23d67a7c233164db5b.png?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 4,
+      "id": 17,
+      "title": "Penguin #6857",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/gcs/files/5e589e020a2311344d532389e9df7c13.png?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 4,
+      "id": 18,
+      "title": "Penguin #704",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/gcs/files/06c91c21cad02035cdeef9e012fc043a.png?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 4,
+      "id": 19,
+      "title": "Penguin #1923",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/gcs/files/97955d47e90520259b22dc5ef4149b94.png?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 4,
+      "id": 20,
+      "title": "Penguin #5678",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/gcs/files/fd93227c68cd24848bfcaa7db51860ec.png?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 5,
+      "id": 21,
+      "title": "Potatoz #1355",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/s/raw/files/ca6f8153fbbf948f90124e531d4d1ec1.gif?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 5,
+      "id": 22,
+      "title": "Potatoz #471",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/s/raw/files/760d05fc6405a28de259c1acb73fe73e.gif?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 5,
+      "id": 23,
+      "title": "Potatoz #3665",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/s/raw/files/79e830a28d1d3401ea182f1bc4b19191.gif?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 5,
+      "id": 24,
+      "title": "Potatoz #8999",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/s/raw/files/68de9d09c2e406c342f2321fb0294361.gif?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 5,
+      "id": 26,
+      "title": "Potatoz #1321",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/s/raw/files/7ed2f264f8381e64d23007bfde3da54a.gif?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 6,
+      "id": 26,
+      "title": "Elemental Bean #13200",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/s/raw/files/a424e97a3620c242f53acb479987302b.gif?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 6,
+      "id": 27,
+      "title": "Elemental Bean #10479",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/s/raw/files/62c67a3df7bd2d615d308384c6f4d2d5.gif?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 6,
+      "id": 28,
+      "title": "Elemental Bean #4909",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/s/raw/files/62c67a3df7bd2d615d308384c6f4d2d5.gif?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 6,
+      "id": 29,
+      "title": "Elemental Bean #1880",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/s/raw/files/7a85d37759b6765a728412ccf6158a48.gif?auto=format&dpr=1&w=1000"
+    },
+    {
+      "albumId": 6,
+      "id": 30,
+      "title": "Elemental Bean #1255",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://i.seadn.io/s/raw/files/7a85d37759b6765a728412ccf6158a48.gif?auto=format&dpr=1&w=1000"
     }
   ],
   "albums": [
@@ -1538,9 +1702,14 @@
       "id": 4
     },
     {
-      "title": "Geometric Gems",
+      "title": "The Potatoz",
       "userId": 5,
       "id": 5
+    },
+    {
+      "title": "Elemental Beans",
+      "userId": 6,
+      "id": 6
     }
   ],
   "coins": [
