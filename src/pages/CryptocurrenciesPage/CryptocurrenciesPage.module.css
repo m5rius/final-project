@@ -3,6 +3,7 @@
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    color: white;
 }
 
 .cryptosListTopWrapper {
@@ -14,9 +15,16 @@
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
+    color: white;
 }
 
 .coinName, .coinPrice, .coinPriceChange, .coinMarketCap {
     display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
     justify-content: center;
 }

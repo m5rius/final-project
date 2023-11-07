@@ -63,34 +63,37 @@ const EditAlbumPage = () => {
 
   return (
     <Container>
-      <h1>Edit Album</h1>
+      <h1 className='create-title'>Edit Album</h1>
       {album ? (
-        <form onSubmit={editAlbumHandler}>
-          <div className='form-control'>
-            <label htmlFor='title'>Title:</label>
-            <input
-              type='text'
-              name='title'
-              id='title'
-              value={title}
-              onChange={titleHandler}
-            />
-          </div>
+        <div className='form-wrapper'> 
+          <form className='form' onSubmit={editAlbumHandler}>
+            <div className='form-control'>
+              <label htmlFor='title'>Title:</label>
+              <input
+                type='text'
+                name='title'
+                id='title'
+                value={title}
+                onChange={titleHandler}
+              />
+            </div>
 
-          <div className='form-control'>
-            <label htmlFor='user'>User:</label>
-            <select
-              name='user'
-              id='user'
-              value={selectedUser}
-              onChange={userHandler}
-            >
-              {users.map(userData => <option key={userData.id} value={userData.id}>{userData.name}</option>)}
-            </select>
-          </div>
-
-          <button type='submit'>Edit Album</button>
-        </form>
+            <div className='form-control'>
+              <label htmlFor='user'>User:</label>
+              <select
+                name='user'
+                id='user'
+                value={selectedUser}
+                onChange={userHandler}
+              >
+                {users.map(userData => <option key={userData.id} value={userData.id}>{userData.name}</option>)}
+              </select>
+            </div>
+            <div className='submit-btn-wrapper'>
+              <button className='submit-btn' type='submit'>Edit</button>
+            </div>
+          </form>
+        </div>
       ) : (
         <ThreeDots wrapperStyle={{display: 'flex',justifyContent: 'center'}} /> 
       )}

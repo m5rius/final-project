@@ -19,8 +19,12 @@ const UsersPage = () => {
   
   return (
     <Container>
-      <h2 className={styles.allUsersText}>All users</h2>
-      <Link className='create-new-user-link' to='/create-user'> Create New User </Link>
+      <h1 className={styles.allUsersText}>All Users</h1>
+      <div className={styles.buttons}>
+        <div className='add-btn-wrapper'>
+          <Link className='add-btn' to='/create-user'> Add User </Link>
+        </div>
+      </div>
       <UsersList users={users}/>
     </Container>
   )

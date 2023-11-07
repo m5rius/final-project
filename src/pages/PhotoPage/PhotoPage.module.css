@@ -1,0 +1,32 @@
+.photoTitle{
+    color: white;
+    padding-top: 20px;
+}
+
+.photoItemWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.photoWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.photoWrapper img{
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.photoItem{
+    background-color: rgb(17, 17, 17);
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}

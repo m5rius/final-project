@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Container from '../../components/Container/Container'
 import AlbumsList from '../../components/AlbumsList/AlbumsList'
-import './AlbumsPage.css'
 import { API_URL } from '../../config'
 import { Link } from 'react-router-dom'
+import styles from './AlbumsPage.module.css'
 
 const AlbumsPage = () => {
 
@@ -16,12 +16,16 @@ const AlbumsPage = () => {
         setAlbums(albums)
       })
     }, [])
+    console.log(albums)
 
   return (
     <Container>
-        <h1 className='albums-page-text'>Albums page</h1>
-        <Link className='create-new-post-link' to='/create-album'> Create new Album </Link>
-        <h2 className='all-albums-text'>All Albums</h2>
+        <h1 className={styles.albumsPageText}>NFT Collections</h1>
+        <div className={styles.buttons}>
+          <div className='add-btn-wrapper'>
+            <Link className='add-btn' to='/create-album'> Add Collection </Link>
+          </div>
+        </div>
         <AlbumsList albums={albums}/>
     </Container>
   )

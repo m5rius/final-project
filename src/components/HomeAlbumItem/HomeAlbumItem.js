@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styles from './AlbumItem.module.css'
+import styles from './HomeAlbumItem.module.css'
 import { FiImage } from "react-icons/fi";
 
 
-const AlbumItem = ({data}) => {
+const HomeAlbumItem = ({data}) => {
   const { title, id, user, photos } = data
 
   let imageElement = ''
@@ -17,7 +17,7 @@ const AlbumItem = ({data}) => {
 
     imageElement = (
       <div className={styles.albumImageWrapper}>
-        <img src = {randomUrl} alt = '/'/>
+        <Link to={`/albums/${id}`}><img src = {randomUrl} alt = '/'/></Link>
       </div>
     ) 
   }
@@ -26,7 +26,7 @@ const AlbumItem = ({data}) => {
   return (
     <>
       <li className={styles.albumsListItem}>
-      <Link to={`/albums/${id}`}>{imageElement}</Link>
+        {imageElement}
         <div className={styles.albumDescription}>
           <div className={styles.albumNameAndPhotos}>
             <div className={styles.albumName}>
@@ -51,4 +51,4 @@ const AlbumItem = ({data}) => {
   )
 }
 
-export default AlbumItem
+export default HomeAlbumItem

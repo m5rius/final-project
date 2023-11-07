@@ -1,0 +1,50 @@
+
+.albumsListItem {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
+    padding: 18px;
+    background-color: rgb(17, 17, 17);
+    gap: 10px;
+}
+
+.albumsListItem a{
+    color: white;
+}
+
+.albumImageWrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.albumImageWrapper {
+    display: flex;
+    width: 250px;
+    height: 250px;
+
+}
+.albumDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.albumNameAndPhotos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.photosLengthAndIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: white;
+}
+
+.albumName{
+    font-weight: bold;
+    font-size: 24px;
+}

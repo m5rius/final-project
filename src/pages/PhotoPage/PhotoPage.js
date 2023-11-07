@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Container from '../../components/Container/Container'
 import { API_URL } from '../../config'
+import styles from './PhotoPage.module.css'
 
 const PhotoPage = () => {
 
@@ -20,15 +21,20 @@ const PhotoPage = () => {
     if(!photo){
         return ''
     }
+
     console.log(photo)
-
-
 
   return (
     <Container>
-        <h1>Photo - {photo.title}</h1>
-        <img src={photo.thumbnailUrl} alt=''></img>
+      <div className={styles.photoItemWrapper}>
+        <div className={styles.photoItem}>
+          <div className={styles.photoWrapper}>
+            <img src={photo.thumbnailUrl} alt=''></img>
+          </div>
+          <h1 className={styles.photoTitle}>{photo.title}</h1>
+          </div>
 
+      </div>
     </Container>
   )
 }

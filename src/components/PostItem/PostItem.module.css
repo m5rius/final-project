@@ -1,7 +1,4 @@
 
-a {
-    color: black;
-}
 
 .postTitle{
     text-transform: capitalize;
@@ -16,22 +13,42 @@ a {
 }
 
 
-.postImageWrapper img{
-    height: 200px;
-    width: 300px;
-    border-radius: 40px;
+.postImageWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.postImageWrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    height: 200px;
+    width: 280px;
+}
+
 
 
 .postListItem {
     display: flex;
     gap: 30px;
+    background-color: rgb(12 12 12);
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .postContentWrapper{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: white;
+    
+}
+
+.postContentWrapper a{
+    color: white;
 }
 
 .postUserImageWrapper img{

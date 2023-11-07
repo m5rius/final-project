@@ -22,8 +22,12 @@ const PostsPage = () => {
   return (
     <Container>
 
-      <Link className='create-new-post-link' to='/create-post'> Create new Post </Link>
-      <h2 className={styles.allPoststext}>All Posts</h2>
+      <h1 className={styles.allPoststext}>Forum Posts</h1>
+      <div className={styles.buttons}>
+        <div className='add-btn-wrapper'>
+          <Link className='add-btn' to='/create-post'> Add Post </Link>
+        </div>
+      </div>
       <PostsList posts={posts} />
     </Container>
   )

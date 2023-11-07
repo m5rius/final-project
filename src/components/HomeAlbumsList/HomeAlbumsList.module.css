@@ -1,0 +1,9 @@
+.albumsList {
+    gap: 30px;
+    display: flex;
+
+}
+
+.albumsListWrapper {
+    display: flex;
+}

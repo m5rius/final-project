@@ -44,33 +44,38 @@ const CreateAlbumPage = () => {
 
   return (
     <Container>
+      <h1 className='create-title'>Create New Collection</h1>
       {users.length > 0 ? (
-        <form onSubmit={newAlbumHandler}>
-          <div className='form-control'>
-            <label htmlFor='title'>Title:</label>
-            <input
-              type='text'
-              name='title'
-              id='title'
-              value={title}
-              onChange={titleHandler}
-            />
-          </div>
+        <div className='form-wrapper'>
+          <form className='form' onSubmit={newAlbumHandler}>
+            <div className='form-control'>
+              <label htmlFor='title'>Title:</label>
+              <input
+                type='text'
+                name='title'
+                id='title'
+                value={title}
+                onChange={titleHandler}
+              />
+            </div>
 
-          <div className='form-control'>
-            <label htmlFor='user'>User:</label>
-            <select
-              name='user'
-              id='user'
-              value={selectedUser}
-              onChange={userHandler}
-            >
-              {users.map(userData => <option key={userData.id} value={userData.id}>{userData.name}</option>)}
-            </select>
-          </div>
+            <div className='form-control'>
+              <label htmlFor='user'>User:</label>
+              <select
+                name='user'
+                id='user'
+                value={selectedUser}
+                onChange={userHandler}
+              >
+                {users.map(userData => <option key={userData.id} value={userData.id}>{userData.name}</option>)}
+              </select>
+            </div>
 
-          <button type='submit'>Create Album</button>
-        </form>
+            <div className='submit-btn-wrapper'>
+              <button className='submit-btn' type='submit'>Create</button>
+            </div>
+          </form>
+        </div>
       ) : (
         <ThreeDots wrapperStyle={{display: 'flex', justifyContent: 'center' }} />
       )}

@@ -14,13 +14,15 @@
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    gap: 20px;
+    color: white;
 }
 
 .priceAndChange{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -30,13 +32,13 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+
 }
 
 .coinSymbol{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.5em;
-    color: rgb(34, 34, 34);
 }
 .coinName{
     font-size: 1.5em;
@@ -44,7 +46,10 @@
 
 .coinImage{
     width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
+
 
 .coinMiddleBlock{
     display: flex;
@@ -52,6 +57,7 @@
     gap: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
+    color: white;
 }
 .middleBlock1, .middleBlock2{
     display: flex;
@@ -61,8 +67,13 @@
 
 .coinInfoWrapper {
     display: flex;
-    border-bottom: solid 1px rgb(34, 34, 34);
+    border-bottom: solid 1px rgb(85 85 85);
     justify-content: space-between;
     gap: 50px;
     padding-bottom: 13px;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }

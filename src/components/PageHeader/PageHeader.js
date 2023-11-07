@@ -15,7 +15,7 @@ const PageHeader = () => {
             </li>
 
             <li className='nav-item'>
-                <NavLink to='/users'>Users Page</NavLink>
+                <NavLink to='/users'>Users</NavLink>
             </li>
             <li className='nav-item'>
                 <NavLink to='/cryptocurrencies'>Cryptocurrencies</NavLink>
@@ -26,7 +26,7 @@ const PageHeader = () => {
             </li>
 
             <li className='nav-item'>
-                <NavLink to='/albums'>NFT collections</NavLink>
+                <NavLink to='/albums'>NFT's</NavLink>
             </li>
             <li className='nav-item'>
                 <NavLink to='/'><SearchForm/></NavLink>

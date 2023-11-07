@@ -4,13 +4,15 @@ import { Link, useParams } from "react-router-dom"
 import { API_URL } from "../../config"
 import { Oval } from "react-loader-spinner"
 import styles from './PostPage.module.css'
+import { FiEdit } from "react-icons/fi";
+import { TiDeleteOutline } from "react-icons/ti";
 
 const PostPage = () => {
 
   const { id } = useParams()
 
   const [post, setPost] = useState('')
-  const[postDeleted, setPostDeleted] = useState(false)
+  const [postDeleted, setPostDeleted] = useState(false)
 
   useEffect(() => {
       fetch(`${API_URL}/posts/${id}?_embed=comments&_expand=user`)
@@ -19,6 +21,7 @@ const PostPage = () => {
         setPost(postData)
       })
   }, [id])
+
 
   if (!post)
   return(
@@ -52,6 +55,27 @@ const PostPage = () => {
   setPostDeleted(true)
   }
 
+  let commentsElement = ''
+
+  if (post.comments.length > 0) {
+    commentsElement = (
+        <div className={styles.commentsContentWrapper}>
+        <h2 className={styles.commentsText}>Comments</h2>
+        <ul className={styles.commentsList}>{post.comments.map((comment, index ) => {
+          return (
+            <li className={styles.commentItem} key={index}>
+              <div className={styles.commentTitle}>{comment.name.toUpperCase()}</div>
+              <div className={styles.commentBody}>{comment.body}</div>
+              <div className={styles.commentEmail}>{comment.email}</div>
+            </li>
+          )
+        })}
+        </ul>
+      </div>
+      )
+
+  }
+
   return (
     <Container>
       {postDeleted ? (
@@ -61,19 +85,35 @@ const PostPage = () => {
         </>
       ) : (
         <>
-          <h1 className="post-page-text">Post Page</h1>
-          <h2 className="title-text">{post.title.toUpperCase()}</h2>
-          <h2 className="body-text">{post.body}</h2>
-          <img src={post.imageUrl} alt="/"></img>
-          <h2 className="author-text">Author: <Link to={`/users/${post.user.id}`}> {post.user.name}</Link></h2>
-          <div className="post-page-buttons">
-            <Link className="edit-post-link" to={`/edit-post/${id}`}>Edit Post</Link>
-            <button className="delete-post-btn" onClick={removePostHandler}>Delete Post</button>
+        <div className={styles.postContentWrapper}>
+
+          <h1 className={styles.postTitle}>{post.title.toUpperCase()}</h1>
+
+          <div className={styles.buttons}>
+              <div className="edit-btn-wrapper">
+                <FiEdit></FiEdit>
+                <Link className="edit-btn" to={`/edit-post/${id}`}>Edit</Link>
+              </div>
+              <div className="remove-btn-wrapper">
+                <TiDeleteOutline></TiDeleteOutline>
+                <button className="remove-btn" onClick={removePostHandler}>Remove</button>
+              </div>
           </div>
-          <h2 className="comments-text">Comments: </h2>
-          <ul className="comments-list">{post.comments.map((comment, index ) => {
-            return <li className="comments-item" key={index}> <div className="comments-name">{comment.name.toUpperCase()}</div> <div className="comments-body">{comment.body}</div><div className="comment-email">{comment.email}</div></li>
-          })}</ul>
+
+          <div className={styles.postImageWrapper}>
+            <img src={post.imageUrl} alt="/"></img>
+          </div>
+
+          <h2 className={styles.postBody}>{post.body}</h2>
+
+          <div className={styles.postAuthor}>
+            <div className={styles.profilePictureWrapper}>
+                <img src={post.user.picture} alt="/"></img>
+            </div>
+            <Link to={`/users/${post.user.id}`}>{post.user.name}</Link>
+          </div>
+        </div>
+        {commentsElement}
         </>
 
       )}

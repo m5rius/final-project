@@ -1,0 +1,26 @@
+.heroTextContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+    gap: 50px;
+
+}
+
+.heroHeading{
+    font-size: 3em;
+}
+
+.heroBody{
+    font-size: 1em;
+    color: rgb(196, 196, 196);
+    font-weight: 500;
+}
+
+.heroContainer{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+    justify-content: space-between;
+}

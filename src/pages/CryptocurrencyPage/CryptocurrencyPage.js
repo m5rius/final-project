@@ -61,8 +61,10 @@ const PostPage = () => {
     <Container>
       {coinDeleted ? (
         <>
+        <div className="deleted-wrapper">
           <p>Cryptocurrency was deleted</p>
           <Link to={'/cryptocurrencies'}>Go back to cryptocurrencies page</Link>
+        </div>
         </>
       ) : (
         <>
@@ -72,23 +74,12 @@ const PostPage = () => {
               <h2 className={styles.coinName}>{coin.name.toUpperCase()}</h2>
               <span className={styles.coinSymbol}>{coin.symbol}</span>
             </div>
+
             <img className={styles.coinImage} src={coin.image} alt="/"></img>
             <span className={styles.coinRank}>Rank #{coin.market_cap_rank}</span>
             <div className={styles.priceAndChange}>
               <span className={styles.coinPrice}>{coin.current_price.toLocaleString()} $</span>
-              <div className={styles.coinPriceChange}>
-                {coin.price_change_percentage_24h < 0 ? (
-                <span className={styles.red}>
-                  <FiArrowDown/>
-                  {coin.price_change_percentage_24h.toFixed(2)} %
-                </span>
-              ): (
-                <span className={styles.green}>
-                  <FiArrowUp/>
-                  {coin.price_change_percentage_24h.toFixed(2)} %
-                </span>
-              )}
-              </div>
+              <span className={styles.red}>{coin.price_change_percentage_24h.toFixed(2)} %</span>
             </div>
           </div>
 
@@ -130,9 +121,13 @@ const PostPage = () => {
           </div>
 
         </div>
-          <div className="post-page-buttons">
-            <Link className="edit-post-link" to={`/edit-coin/${id}`}>Edit Coin</Link>
-            <button className="delete-post-btn" onClick={removeCoinHandler}>Delete Coin</button>
+          <div className={styles.buttons}>
+            <div className="edit-btn-wrapper">
+              <Link className="edit-btn" to={`/edit-coin/${id}`}>Edit</Link>
+            </div>
+            <div className="remove-btn-wrapper">
+              <button className="remove-btn" onClick={removeCoinHandler}>Remove</button>
+            </div>
           </div>
         </>
 

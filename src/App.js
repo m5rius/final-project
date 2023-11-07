@@ -18,10 +18,11 @@ import CreateAlbumPage from './pages/CreateAlbumPage/CreateAlbumPage';
 import EditAlbumPage from './pages/EditAlbumPage/EditAlbumPage';
 import CryptocurrenciesPage from './pages/CryptocurrenciesPage/CryptocurrenciesPage';
 import CryptocurrencyPage from './pages/CryptocurrencyPage/CryptocurrencyPage';
+import CreateCoinPage from './pages/CreateCoinPage/CreateCoinPage';
 
 function App() {
   return (
-    <div>
+    <div className='main'>
       <PageHeader></PageHeader>
 
       <Routes>
@@ -30,6 +31,7 @@ function App() {
         <Route path='/albums' element ={<AlbumsPage/>}></Route>
         <Route path='/cryptocurrencies' element ={<CryptocurrenciesPage/>}></Route>
         <Route path='/coins/:id' element ={<CryptocurrencyPage/>}></Route>
+        <Route path='/create-coin' element ={<CreateCoinPage/>}></Route>
         <Route path='/search-page' element ={<SearchPage/>}></Route>
         <Route path='/posts/:id' element ={<PostPage/>}></Route>
         <Route path='/create-post' element ={<CreatePostPage/>}></Route>

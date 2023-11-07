@@ -12,14 +12,15 @@ const UsersList = ({ users }) => {
             </ul>
         )
     }
+
   return (
     <>
-        <div className={styles.usersListTop}>
-            <span className={styles.name}>Name</span>
-            <span className={styles.userName}>User Name</span>
-            <span className={styles.city}>City</span>
-            <span className={styles.posts}>Posts</span>
-        </div>
+        <ul className={styles.usersListTop}>
+            <li className={styles.listItem}>Name</li>
+            <li className={styles.listItem}>User Name</li>
+            <li className={styles.listItem}>City</li>
+            <li className={styles.listItem}>Posts</li>
+        </ul>
         {usersElement}
     </>
   )

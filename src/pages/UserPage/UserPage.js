@@ -72,8 +72,10 @@ const UserPage = () => {
 
   let noUserElement = (
     <>
+    <div className="deleted-wrapper">
       <p>User was deleted</p>
       <Link to={'/users'}>Go back to users page</Link>
+    </div>
     </>
   )
 

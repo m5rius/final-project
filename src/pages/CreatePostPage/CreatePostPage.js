@@ -38,8 +38,6 @@ const CreatePostPage = () => {
       userId: Number(selectedUser),
     }
 
-    console.log(newPost)
-
     const res = await axios.post(`${API_URL}/posts`, newPost)
 
     if (res.statusText === 'Created'){
@@ -53,50 +51,54 @@ const CreatePostPage = () => {
   
   return (
     <Container>
-      <h1>Create New Post</h1>
+      <h1 className='create-title'>Create New Post</h1>
 
       {users.length > 0 ? (
-      <form onSubmit={newPostHandler}>
-        <div className='form-control'>
-          <label htmlFor='title'>Title: </label>
-          <input
-          type='text'
-          name='title'
-          id='title'
-          value={title}
-          onChange={titleHandler}
-          />
-        </div>
+        <div className='form-wrapper'>
+          <form className='form' onSubmit={newPostHandler}>
+            <div className='form-control'>
+              <label htmlFor='title'>Title: </label>
+              <input
+              type='text'
+              name='title'
+              id='title'
+              value={title}
+              onChange={titleHandler}
+              />
+            </div>
 
-        <div className='form-control'>
-          <label htmlFor='body'>Content: </label>
-          <textarea
-          name='body'
-          id='body'
-          value={body}
-          onChange={bodyHandler}
-          />
-        </div>
+            <div className='form-control'>
+              <label htmlFor='body'>Content: </label>
+              <textarea
+              name='body'
+              id='body'
+              value={body}
+              onChange={bodyHandler}
+              />
+            </div>
 
-        <div className='form-control'>
-          <label htmlFor='imageUrl'>Image:</label>
-          <input
-          type ='url'
-          name ='imageUrl'
-          id ='imageUrl'
-          value ={imageUrl}
-          onChange ={imageUrlHandler}
-          />
-        </div>
+            <div className='form-control'>
+              <label htmlFor='select'>Select User:</label>
+              <select id='select' onChange={userHandler} value={selectedUser}>
+                {users.map(user => <option key={user.id} value={user.id}>{user.name}</option>)}
+              </select>
+            </div>
 
-        <div className='form-control'>
-          <select onChange={userHandler} value={selectedUser}>
-            {users.map(user => <option key={user.id} value={user.id}>{user.name}</option>)}
-          </select>
+            <div className='form-control'>
+              <label htmlFor='imageUrl'>Image:</label>
+              <input
+              type ='url'
+              name ='imageUrl'
+              id ='imageUrl'
+              value ={imageUrl}
+              onChange ={imageUrlHandler}
+              />
+            </div>
+            <div className='submit-btn-wrapper'>
+              <button className='submit-btn' type='submit'>Create</button>
+            </div>
+          </form>
         </div>
-
-        <button type='submit'>Create</button>
-      </form>
       ) : (
         <p>Loading...</p>
       )}

@@ -1,0 +1,79 @@
+a{
+    text-decoration: none;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.albumTitle {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.albumOwnerText{
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+}
+
+.albumOwnerText a{
+    color: white;
+}
+
+.albumList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.albumItem {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
+    background-color: rgb(17, 17, 17);
+}
+
+.photoLink {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.albumPhotoContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+
+.albumPhotoWrapper{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+}
+
+.albumPhotoWrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+
+}
+
+.albumPhotoTitle{
+    text-align: center;
+    color: white;
+}
