@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Container from '../../components/Container/Container'
+import { useNavigate } from 'react-router-dom'
 import { API_URL } from '../../config'
-import styles from './CreateCoinPage.module.css'
+import axios from 'axios'
+import { toast } from 'react-toastify'
 
 
 const CreateCoinPage = () => {
@@ -19,6 +21,9 @@ const CreateCoinPage = () => {
     const[priceChangePercentage, setPriceChangePercentage] = useState([])
     const[price, setPrice] = useState([])
     const[totalSupply, setTotalSupply] = useState([])
+
+    
+  const navigate = useNavigate()
 
 
 
@@ -47,7 +52,7 @@ const CreateCoinPage = () => {
 
 
   
-    const newCoinHandler = event => {
+    const newCoinHandler = async event => {
       event.preventDefault()
   
       const newCoin= {
@@ -68,19 +73,14 @@ const CreateCoinPage = () => {
 
       }
 
-      console.log(newCoin)
+      const res = await axios.post(`${API_URL}/coins`, newCoin)
 
-      fetch(`${API_URL}/coins`, {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-        body: JSON.stringify(newCoin)
-      })
-      .then(res => res.json())
-      .then(data => {
-        console.log(data)
-      })
+      if (res.statusText === 'Created'){
+        navigate('/coins/' + res.data.id)
+        toast.success(`Coin was created successfully`)
+      } else {
+        console.error('Something went wrong...')
+      }
   
     }
     

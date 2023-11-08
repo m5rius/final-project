@@ -39,6 +39,10 @@
     border-radius: 10px;
 }
 
+.postListItem:hover {
+    background-color: rgb(31, 31, 31);
+}
+
 .postContentWrapper{
     display: flex;
     flex-direction: column;

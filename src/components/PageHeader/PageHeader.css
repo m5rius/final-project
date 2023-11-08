@@ -1,8 +1,8 @@
 .page-header{
     background-color: rgb(0, 0, 0);
     color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -10,7 +10,6 @@
 
 .page-header .nav-list {
     display: flex;
-    justify-content: flex-end;
     gap: 20px;
 }   
 
@@ -26,4 +25,19 @@
 
 .page-header .nav-list a:hover{
     color: rgba(255, 255, 255, 0.514)
+}
+.logo{
+    width: 130px;
+    height: 20px;
+}
+
+.main-navigation{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.image-wrapper{
+    display: flex;
 }

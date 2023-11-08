@@ -42,7 +42,7 @@ const CreatePostPage = () => {
 
     if (res.statusText === 'Created'){
       navigate('/posts/' + res.data.id)
-      toast.success(`Post was created (${res.data.title})`)
+      toast.success(`Post was created successfully`)
     } else {
       console.error('Something went wrong...')
     }

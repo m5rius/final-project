@@ -30,12 +30,12 @@ ul, h2, h1, h3, h4{
 }
 
 .edit-btn-wrapper{
-  background-color: rgb(99, 99, 241);
+  background-image: linear-gradient(rgb(102, 80, 226), rgb(43, 22, 161));
   color: white;
 }
 
 .remove-btn-wrapper{
-  background-color: rgb(240, 74, 74);
+  background-image: linear-gradient(rgb(229, 79, 79), rgb(162, 35, 35));
   color: white;
 }
 
@@ -64,13 +64,13 @@ ul, h2, h1, h3, h4{
 }
 
 .add-btn-wrapper{
-  background-color: rgb(74, 126, 240);
+  background-image: linear-gradient(rgb(87,65,217), rgb(43, 22, 161));
   color: white;
 
 }
 
 .main{
   background: linear-gradient(to right, rgb(36, 36, 36) 0%, rgb(0, 0, 0) 99.4%);
-  padding-bottom: 500px;
+  padding-bottom: 700px;
   padding-top: 40px;
 }

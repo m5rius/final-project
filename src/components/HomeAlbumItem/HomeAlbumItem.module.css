@@ -8,6 +8,9 @@
     background-color: rgb(17, 17, 17);
     gap: 10px;
 }
+.albumsListItem:hover{
+    background-color: rgb(31, 31, 31);
+}
 
 .albumsListItem a{
     color: white;

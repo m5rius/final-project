@@ -11,10 +11,13 @@
     font-size: 3em;
 }
 
+
 .heroBody{
     font-size: 1em;
     color: rgb(196, 196, 196);
     font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1.3;
 }
 
 .heroContainer{
@@ -23,4 +26,21 @@
     margin-bottom: 50px;
     gap: 30px;
     justify-content: space-between;
+}
+
+
+.allCoinsSection{
+    margin-top: 40px;
+}
+
+.allCoinsHeading {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+    gap: 50px;
+    font-size: 2em;
+}
+.allCoinsContainer{
+    margin-top: 50px;
 }

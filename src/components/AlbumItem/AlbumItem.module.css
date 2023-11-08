@@ -6,6 +6,10 @@
     background-color: rgb(17, 17, 17);
 }
 
+.albumsListItem:hover {
+    background-color: rgb(31, 31, 31);
+}
+
 .albumsListItem a{
     color: white;
 }

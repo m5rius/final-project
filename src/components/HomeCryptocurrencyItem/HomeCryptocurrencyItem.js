@@ -16,7 +16,7 @@ const HomeCryptocurrencyItem = ({data}) => {
         </Link>
 
         <div>
-          <Link to={`/coins/${id}`}>{name}</Link>
+          <Link className={styles.coinName} to={`/coins/${id}`}>{name}</Link>
         </div>
       </div>
       <div className={styles.coinPrice}>$ {current_price.toLocaleString()}</div>

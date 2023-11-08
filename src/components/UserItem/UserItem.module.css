@@ -38,6 +38,10 @@
     font-weight: 500;
 }
 
+.usersListItem:hover {
+    background-color:rgb(216, 216, 216);
+}
+
 .usersListItem a{
     color: black;
 }

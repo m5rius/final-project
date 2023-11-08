@@ -3,6 +3,8 @@ import Container from '../../components/Container/Container'
 import { API_URL } from '../../config'
 import { useNavigate } from 'react-router-dom'
 import './Create.css'
+import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const CreateUserPage = () => {
@@ -52,7 +54,7 @@ const CreateUserPage = () => {
     const lngHandler = event => setLng(event.target.value)
     const latHandler = event => setLat(event.target.value)
   
-    const newUserHandler = event => {
+    const newUserHandler = async event => {
       event.preventDefault()
   
       const newUser = {
@@ -78,18 +80,16 @@ const CreateUserPage = () => {
             bs: bs,
         }
       }
+      
 
-      fetch(`${API_URL}/users`, {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-        body: JSON.stringify(newUser)
-      })
-      .then(res => res.json())
-      .then(data => {
-        console.log(data)
-      })
+      const res = await axios.post(`${API_URL}/users`, newUser)
+
+      if (res.statusText === 'Created'){
+        navigate('/users/' + res.data.id)
+        toast.success(`User was created successfully`)
+      } else {
+        console.error('Something went wrong...')
+      }
   
     }
     

@@ -19,6 +19,8 @@ import EditAlbumPage from './pages/EditAlbumPage/EditAlbumPage';
 import CryptocurrenciesPage from './pages/CryptocurrenciesPage/CryptocurrenciesPage';
 import CryptocurrencyPage from './pages/CryptocurrencyPage/CryptocurrencyPage';
 import CreateCoinPage from './pages/CreateCoinPage/CreateCoinPage';
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.min.css';
 
 function App() {
   return (
@@ -46,9 +48,9 @@ function App() {
         <Route path='/' element ={<HomePage/>}></Route>
 
         <Route path='*' element ={<h1>404: Page not found</h1>}></Route>
-
       </Routes>
       
+      <ToastContainer position="bottom-right" />
     </div>
     
   )

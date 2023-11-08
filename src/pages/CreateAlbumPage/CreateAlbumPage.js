@@ -4,6 +4,7 @@ import Container from '../../components/Container/Container'
 import axios from 'axios'
 import { ThreeDots } from 'react-loader-spinner'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 const CreateAlbumPage = () => {
   const [title, setTitle] = useState('')
@@ -37,6 +38,7 @@ const CreateAlbumPage = () => {
 
     if (res.statusText === 'Created') {
       navigate('/albums/' + res.data.id)
+      toast.success(`Collection was created successfully`)
     } else {
       console.error('Something went wrong.')
     }
