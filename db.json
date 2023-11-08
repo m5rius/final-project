@@ -4572,34 +4572,6 @@
       "atl_date": "2022-11-29T23:20:09.754Z",
       "roi": null,
       "last_updated": "2023-11-04T15:25:21.824Z"
-    },
-    {
-      "id": "gmx",
-      "symbol": "gmx",
-      "name": "GMX",
-      "image": "https://assets.coingecko.com/coins/images/18323/large/arbit.png?1696517814",
-      "current_price": 47.65,
-      "market_cap": 436472841,
-      "market_cap_rank": 100,
-      "fully_diluted_valuation": 436472841,
-      "total_volume": 17247136,
-      "high_24h": 48.2,
-      "low_24h": 46.85,
-      "price_change_24h": 0.578444,
-      "price_change_percentage_24h": 1.22877,
-      "market_cap_change_24h": 7852323,
-      "market_cap_change_percentage_24h": 1.832,
-      "circulating_supply": 9172000.32900908,
-      "total_supply": 9172000.32900908,
-      "max_supply": 13250000,
-      "ath": 91.07,
-      "ath_change_percentage": -47.67489,
-      "ath_date": "2023-04-18T10:00:25.680Z",
-      "atl": 11.53,
-      "atl_change_percentage": 313.15955,
-      "atl_date": "2022-06-15T09:30:22.146Z",
-      "roi": null,
-      "last_updated": "2023-11-04T15:25:24.279Z"
     }
   ]
 }
